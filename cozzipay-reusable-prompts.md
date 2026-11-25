@@ -2,11 +2,13 @@
 
 These are the prompts used, in order, to research and build lead lists for Cozzipay (cozzipay.com), a card-free wallet that lets people in Africa pay for online platforms and services. Each prompt is in its own code block so it copies cleanly. The prompts are verbatim, including original typos.
 
-Prompts 8, 11 and 12 were followed by files in this repo:
+Prompts 8, 11, 12, 17 and 19 were followed by files in this repo:
 
 - Prompt 8: `cozzipay-ai-saas-platforms.xlsx` and `cozzipay-ai-saas-platforms.md`
 - Prompt 11: `cozzipay-ai-saas-platforms-batch2.xlsx` and `cozzipay-ai-saas-platforms-batch2.md`
 - Prompt 12: `cozzipay-africa-expansion-startups.xlsx` and `cozzipay-africa-expansion-startups.md`
+- Prompt 17: `cozzipay-recently-funded-startups.xlsx` and `cozzipay-recently-funded-startups.md`, with raw research in `research/recently-funded/`
+- Prompt 19: `cozzipay-ai-coding-platforms.xlsx` and `cozzipay-ai-coding-platforms.md`, with raw research in `research/ai-coding/`
 
 ---
 
@@ -147,6 +149,86 @@ So we need the ones that will see potential to expand to Africa and make more mo
 
 ~~~text
 Okay I need you to help me put all the prompt I have send to you into an Md file so that I can reuse them
+~~~
+
+## 14. Internet access question
+
+**Purpose / when to use:** Check whether the AI can get live information from the web.
+
+**Tip:** Ask it to run a test search, so you see real results instead of a description of its tools.
+
+~~~text
+Do you have access to internet to get information here
+~~~
+
+## 15. Research limits question
+
+**Purpose / when to use:** Find out what the AI can and cannot research (search, page reading, blocked sites, contacts).
+
+**Tip:** Ask this before a big research batch so you know which fields will come back as "Not found".
+
+~~~text
+To what extent can you research?
+~~~
+
+## 16. Recently funded startups: capability check
+
+**Purpose / when to use:** Check whether the AI can find startups that raised in the last 6 months and look ready to expand.
+
+**Tip:** Ask for a few sample results with dates and sources before requesting a full batch.
+
+~~~text
+Are you able to find startup that recently raised in the last 6 months that are potentially looking for more market opportunities to explore or expand into
+~~~
+
+## 17. Batch 4: 150 recently funded startups
+
+**Purpose / when to use:** Research 150 startups that raised in the last 6 months, could expand into new markets, and have a product that could be adopted and scale in Africa.
+
+**Tip:** Output files for this batch: `cozzipay-recently-funded-startups.xlsx` and `.md`. Ask for the funding source link, round date and any expansion signal on every row.
+
+~~~text
+Awesome okay before we rework on the previous batches we have done help me find and gather 150 startups that full under recently raised in the last 6 months that are potentially looking for more market opportunities to explore or expand into,
+
+Awesome okay before we rework on the previous batches we have done help me find and gather 150 startups that full under recently raised in the last 6 months that are potentially looking for more market opportunities to explore or expand into, And have valuable product value proposition that can be adopted in Africa and scale
+~~~
+
+## 18. Push research files to the repo
+
+**Purpose / when to use:** Save the latest batch and its raw research data to the GitHub repo in the same format as earlier batches.
+
+**Tip:** Name the files you mean (for example "the raw research data") so nothing is missed.
+
+~~~text
+Push it to the repo and put it in the files like we have done for others
+~~~
+
+## 19. Batch 5: 100 AI coding platforms with Africa labels
+
+**Purpose / when to use:** Research 100 AI coding platforms and tools and label each as "In Africa" or "Not yet in African market".
+
+**Tip:** Output files for this batch: `cozzipay-ai-coding-platforms.xlsx` and `.md`. Define what counts as "In Africa" (office, local pricing, local payment method, official partnership or programme) so labels are consistent.
+
+~~~text
+Now there is another set of platforms I noticed they are AI coding platforms this are valuable platforms for African tech and businesses so research and find 100 ai coding platforms/tools check also if they have reach African market I.e are already in Africa or not if they are in Africa label as in Africa and if not label not yet in African market
+~~~
+
+## 20. Check findings were saved and pushed
+
+**Purpose / when to use:** Confirm that findings mentioned in chat are in the files and pushed to GitHub.
+
+**Tip:** Ask for this check after every batch. Chat summaries sometimes contain details the files do not.
+
+~~~text
+Did you add the notable findings to the file and have you pushed them to GitHub
+~~~
+
+## 21. Update the prompts file
+
+**Purpose / when to use:** Add new prompts from the session to this file.
+
+~~~text
+Okay now add my additional prompts to the prompt file
 ~~~
 
 ---
